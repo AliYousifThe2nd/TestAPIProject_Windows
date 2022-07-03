@@ -5,7 +5,9 @@ files:
     destination: C:\temp\TestAPIProject
   
 hooks:
+  ApplicationStop:
+    - location: deploy-scripts\application-stop.ps1
+  BeforeInstall:
+    - location: deploy-scripts\before-install.ps1
   ApplicationStart:
-    - location: deploy-scripts\PublishArtifacts.ps1
-    - location: deploy-scripts\StageArtifacts.ps1
-    - location: deploy-scripts\CreateWebSite.ps1
+    - location: deploy-scripts\application-start.ps1
