@@ -6,5 +6,5 @@ function DeleteIfExistsAndCreateEmptyFolder($dir )
     }
     New-Item -ItemType Directory -Force -Path $dir
 }
-DeleteIfExistsAndCreateEmptyFolder("C:\temp\TestAPIProject\out" )
+#DeleteIfExistsAndCreateEmptyFolder("C:\temp\TestAPIProject\out" )
 DeleteIfExistsAndCreateEmptyFolder("C:\inetpub\wwwroot\TestAPI\")
