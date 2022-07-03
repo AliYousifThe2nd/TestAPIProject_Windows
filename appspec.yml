@@ -5,7 +5,7 @@ files:
     destination: C:\temp\TestAPIProject
   
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: deploy-scripts\PublishArtifacts.ps1
     - location: deploy-scripts\StageArtifacts.ps1
     - location: deploy-scripts\CreateWebSite.ps1
