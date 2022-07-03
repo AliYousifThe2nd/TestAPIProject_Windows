@@ -1,0 +1,11 @@
+version: 0.0
+os: windows
+files:
+  - source: \
+    destination: C:\temp\TestAPIProject
+  
+hooks:
+  BeforeInstall:
+    - location: deploy-scripts\PublishArtifacts.ps1
+    - location: deploy-scripts\StageArtifact.ps1
+    - location: deploy-scripts\CreateWebSite.ps1

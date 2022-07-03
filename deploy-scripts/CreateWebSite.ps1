@@ -1,0 +1,1 @@
+New-WebApplication -Site "Default Web Site" -Name TestAPI -PhysicalPath c:\inetpub\wwwroot\TestAPI -Force
