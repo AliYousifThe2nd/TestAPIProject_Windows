@@ -11,4 +11,4 @@ function DeleteIfExistsAndCreateEmptyFolder($dir )
 # Clean up target directory
 DeleteIfExistsAndCreateEmptyFolder($target )
 
-dotnet publish TestAPI -o C:\temp\TestAPIProject\out
+dotnet publish C:\temp\TestAPIProject -o C:\temp\TestAPIProject\out
